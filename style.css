@@ -131,11 +131,16 @@ span{
 .primary-btn{
     width: 175px;
     height: 70px;
-    background-color: var(--primary-color);
+     background-color: var(--primary-color); 
     border-radius: 16px;
    border: none;
    color: var(--light-color);
    cursor: pointer; 
+   
+}
+.primary-btn:hover{
+  transform: scale(1.1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .secondry-btn{
     width: 105px;
@@ -145,6 +150,14 @@ span{
    border: none;
    color: var(--light-color);
    cursor: pointer; 
+}
+.secondry-btn:hover{
+  transform: scale(1.1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btn-outline:hover{
+  transform: scale(1.1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .btn-outline{
     width: 93px;
@@ -404,6 +417,7 @@ margin-top: 185px;
 left: 725px;
 cursor: pointer;
 color: var(--light-color);
+
 }
 .form-text p{
   opacity: 50%;
@@ -426,10 +440,13 @@ color: var(--light-color);
   display: flex;
   align-items: flex-start;
   gap: 20px;
+  cursor: pointer;
 }
 .copy-right{
   margin-top: 30px;
 }
+
+
 
 
 /* for taplet device */
@@ -438,6 +455,7 @@ color: var(--light-color);
   header{
     padding: 0;
     margin: 0;
+    width: 1440px;
   }
   .logo{
     display: none;
@@ -452,13 +470,23 @@ color: var(--light-color);
 		z-index: 9999;
 		position: absolute;
 		top: 5%;
-		right: 2%;
+		right: 10%;
 		color: #fff;
 		font-size: 30px;
 		background-color: #386853;
 		border-radius: 50%;
 		width: 80px;
 		height: 80px;
+  }
+  .hero-section{
+    justify-content: flex-start;
+  }
+  .hero-container{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     margin-left: -118px;
+
   }
   .about-us-section{
      width: 100%; 
@@ -522,12 +550,13 @@ color: var(--light-color);
 }
 .footer-section {
    width: 638px;
-  height: 100vh;
+  height: 716px;
   background-color: var(--primary-color);
   margin-left: 2px;
 }
 .footer-boxs{
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 80px;
   margin-left: -56px;
@@ -536,8 +565,4 @@ color: var(--light-color);
 
 }
 
-@media screen and (min-width: 600px){
-  .logo img{
-    display: none;
-  }
-}
+/*  */
