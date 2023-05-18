@@ -212,6 +212,9 @@ nav li{
 .mobile-menu{
   display: none;
 }
+/* .hero-container{
+  display: none;
+} */
 /* hero-section inside hero-img, partners-ship, hero-sectio-button,  */
 .hero-section{
   width: 100%;
@@ -478,16 +481,16 @@ color: var(--light-color);
 		width: 80px;
 		height: 80px;
   }
-  .hero-section{
+  /* .hero-section{
     justify-content: flex-start;
-  }
-  .hero-container{
+  } */
+  /* .hero-container{
      display: flex;
      flex-direction: column;
      align-items: flex-start;
      margin-left: -118px;
 
-  }
+  } */
   .about-us-section{
      width: 100%; 
     height: auto;
@@ -565,4 +568,40 @@ color: var(--light-color);
 
 }
 
-/*  */
+/* mobile */
+
+@media screen and (max-width: 600px){
+
+  .hero-section{
+    margin-left: -453px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .hero-img img {
+    max-width: 300px;
+    height: 100%;
+    margin-left: -200px;
+}
+.hero-text{
+  padding: 76px 50px;
+   margin-left: -139px;
+}
+.hero-text h1{
+  font-size: 39px;
+}
+.hero-text p{
+  font-size: 14.21px;
+}
+.hamburger{
+  right: 1%;
+}
+.portfolio-section{
+  margin-top: 20px;
+}
+.portfolio-section h2{
+ font-size: 22px;
+}
+
+
+}
